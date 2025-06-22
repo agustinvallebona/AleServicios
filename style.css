@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #a1b8c8ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #1a86e6;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+header h1 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+header h1 span {
+  color: rgb(2, 85, 126);
+}
+.contenedor-principal {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+.tarjeta-servicios {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta-servicios h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  font-size: 1.4rem;
+}
+
+.lista-servicios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-servicios li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Zoom suave al pasar el mouse o tocar en móvil */
+.lista-servicios li:hover,
+.lista-servicios li:focus,
+.lista-servicios li:active {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+
+/* WhatsApp flotante */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 2rem;
+  padding: 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* Animación scroll */
+.animado {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.trabajos-realizados {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.trabajos-realizados h2 {
+  margin-bottom: 15px;
+  color: #007bff;
+  font-size: 1.4rem;
+}
+
+.lista-trabajos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.lista-trabajos li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.ver-galeria {
+  display: inline-block;
+  margin-top: 15px;
+  background: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.ver-galeria:hover {
+  background: #0056b3;
+}
+
